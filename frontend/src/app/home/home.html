@@ -1,0 +1,20 @@
+<div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+  <h1 class="text-2xl font-bold mb-6">Acortador de URL</h1>
+  
+  <form (ngSubmit)="onSubmit()" class="flex space-x-2 w-full max-w-md">
+    <input 
+      type="text" 
+      [(ngModel)]="url" 
+      name="url"
+      placeholder="Ingresa tu URL"
+      required
+      class="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+    >
+    <button 
+      type="submit"
+      class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+    >
+      Acortar
+    </button>
+  </form>
+</div>
